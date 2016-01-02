@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>View All Students</title>
+   </head>
+     <body>
+      <a href="/homepage" target="_blank">Click here to  register the students </a> 
+      <br>
+      <h2>Total Students :<%= data.length %></h2>
+     <h1>List of All Students</h1>
+     <table  style="width:100%">
+      <thead>
+        <tr>
+          <th style="width: 10%;">Roll No</th>
+          <th style="width: 10%;">First Name</th>   
+          <th style="width: 10%;">Last name</th>
+          <th style="width: 20%;">Email</th>
+          <th style="width: 10%;">Phone</th>
+          <th style="width: 5%;">Degree</th>
+          <th style="width: 10%;">College</th>
+          <th style="width: 5%;">Branch</th>
+          <th style="width: 10%;">Email</th>
+          <th style="width: 10%;">Date of Birth</th>   
+        </tr>
+      </thead>
+     <tbody>
+      <% for(var i=0;i<data.length;i++){%>
+      <tr style='font-weight: bold;'>
+            <td style=\"width: 10%;\"> <%= data[i].rollNo %></td>
+            <td style=\"width: 10%;\"><%= data[i].first_name %></td>
+            <td style=\"width: 10%;\"><%= data[i].last_name %></td>
+            <td style=\"width: 20%;\"><%= data[i].email %></td>
+            <td style=\"width: 10%;\"><%= data[i].phone %></td>
+            <td style=\"width: 5%;\"><%= data[i].degree %></td>
+            <td style=\"width: 10%;\"><%= data[i].college %></td>
+            <td style=\"width: 5%;\"><%= data[i].branch %></td>
+            <td style=\"width: 10%;\"><%= data[i].email %></td>
+            <td style=\"width: 10%;\"><%= data[i].dob %></td>
+          </tr>
+       
+      <% } %>
+     </tbody>
+     </body>
+   </html>
