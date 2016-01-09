@@ -1,3 +1,4 @@
+Try the app at http://54.172.250.28:3000/homepage
 Steps to run:
 
 1. In cmd, cd to the folder where you have extracted the project folder, lets say 'C:\project'.
