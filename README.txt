@@ -6,13 +6,7 @@ Steps to run:
 SET-UP:
 -- Run 'npm install' in cmd
 -- Install the required modules i.e run the following .
-   npm install express
-   npm install ejs
-   npm install mysql
-   npm install body-parser
-   npm install cookie-parser
-   npm install morgan
-   npm install serve-favicon
+   npm update
    
 -- Set up Database
 
